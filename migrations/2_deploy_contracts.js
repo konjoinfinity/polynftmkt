@@ -1,4 +1,4 @@
-const Market = artifacts.require("./Market.sol");
+const Market = artifacts.require("./NFTMarket.sol");
 const NFT = artifacts.require("./NFT.sol");
 
 module.exports = async function (deployer) {
