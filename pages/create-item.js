@@ -73,6 +73,8 @@ export default function CreateItem() {
     let transaction = await contract.createToken(url)
     
     let tx = await transaction.wait()
+
+    console.log("transaction 1")
     
     let event = tx.events[0]
     let value = event.args[2]
@@ -87,6 +89,7 @@ export default function CreateItem() {
     listingPrice = listingPrice.toString()
 
     transaction = await contract.createMarketItem(nftaddress, tokenId, price, { value: listingPrice })
+    console.log("transaction 2")
     
     await transaction.wait()
     router.push('/')
