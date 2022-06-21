@@ -110,7 +110,7 @@ export default function CreateItem() {
         />
 
         <input
-          placeholder="NFT Price in Eth"
+          placeholder="NFT Price in MATIC"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
