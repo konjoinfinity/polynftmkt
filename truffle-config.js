@@ -21,15 +21,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 const fs = require('fs');
-
-
-if (process.env.NODE_ENV == "production") {
-  const mnemonic = fs.readFileSync(".secret").toString().trim();
-  console.log("Prod Env");
-} else {
-  const mnemonic = process.env.PK_SP.toString().trim();
-  console.log("Dev Env");
-}
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
