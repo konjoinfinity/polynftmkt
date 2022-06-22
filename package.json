@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": { "node": "^18.4.0", "npm": "^8.12.2" },
+  "engines": { "node": "18.4.0", "npm": "8.12.2" },
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "@truffle/hdwallet-provider": "^2.0.9",
